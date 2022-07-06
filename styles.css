@@ -1,0 +1,99 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "display display display display"
+    "clear divide multiply rest"
+    "seven eight nine add"
+    "four five six add"
+    "one two three enter"
+    "zero zero dot enter"
+    ;
+    background-color: black;
+    padding: 10px;
+    width: 80%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.grid-container div {
+    background-color: rgb(56, 55, 55);
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    color: white;
+    text-align: center;
+    line-height: 75px;
+    vertical-align: middle;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.grid-container div:hover {
+    background-color: rgb(98, 96, 96);
+}
+.grid-container div:active {
+    transform: translateY(3px);
+
+}
+
+#clear {grid-area: clear;}
+#divide {grid-area: divide;}
+#multiply {grid-area: multiply;}
+#rest {grid-area: rest;}
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#one {grid-area: one;}
+#two {grid-area: two;}
+#three {grid-area: three;}
+#dot {grid-area: dot;}
+#add {
+    grid-area: add;
+    height: 160px;
+    line-height: 160px;
+}
+#enter {
+    grid-area: enter;
+    height: 160px;
+    line-height: 160px;
+}
+#zero {
+    grid-area: zero;
+    width: 160px;
+}
+#display {
+    grid-area: display;
+    background-color: silver;
+    color: black;
+    width: 340px;
+    border-radius: 0px;
+    display: grid;
+    grid-template-areas: 
+    "div"
+    "div"
+    ;
+    transform: translateY(0);
+    cursor: default;
+    /* 
+    */
+}
+
+#display p {
+    line-height: 35px;
+    padding-right: 10px;
+    /*
+    */
+    background-color: silver;
+    text-align: right;
+    margin: 0px;
+}
+

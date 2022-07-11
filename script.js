@@ -1,9 +1,4 @@
 document.addEventListener("keydown", function (event) {
-  /*
-  if (event.code == 'KeyZ' && (event.ctrlKey || event.metaKey)) {
-    alert('Undo!')
-  }
-  */
   console.log("Pressed key: ", event);
   if (
     event.key == "1" ||
@@ -32,15 +27,6 @@ document.addEventListener("keydown", function (event) {
     pressClear();
   }
 });
-/*
-
-document.getElementById("body").addEventListener("keydown", keyPressed);
-
-function keyPressed() {
-  console.log("Pressed key:", )
-  //document.getElementById("demo").style.backgroundColor = "red";
-}
-*/
 
 function pressClear() {
   console.log("pressClear pressed");
@@ -135,16 +121,6 @@ function pressOperation(operation) {
       document.getElementById("display1Value").innerHTML =
         document.getElementById("display1").innerHTML;
     }
-    /*
-    else {
-        document.getElementById("operator").innerHTML = operation;
-        document.getElementById("display1Value").innerHTML =
-        document.getElementById("display2").innerHTML;
-        document.getElementById("display1").innerHTML =
-        document.getElementById("display1Value").innerHTML +
-        document.getElementById("operator").innerHTML;
-    }
-    */
     document.getElementById("display2").innerHTML = 0;
   } else if (operation == "=") {
     if (document.getElementById("operator").innerHTML != "") {

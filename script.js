@@ -111,8 +111,7 @@ function pressOperation(operation) {
         document.getElementById("display1Value").innerHTML +
         document.getElementById("operator").innerHTML;
     } else {
-      document.getElementById("nextoperator").innerHTML =
-        document.getElementById("operator").innerHTML;
+      document.getElementById("nextoperator").innerHTML = operation;
       executeOperation();
       console.log("non empty operator");
       document.getElementById("operator").innerHTML =
